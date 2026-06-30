@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Doctor Digital</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Para íconos -->
+</head>
+<body>
+    <header>
+        <h1>El Doctor Digital</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#consultas">Consultas</a></li>
+                <li><a href="#consejos">Consejos de Salud</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="seccion slide-in-left">
+            <h2>Bienvenido a El Doctor Digital</h2>
+            <img src="inicio.jpg" alt="Bienestar y salud" class="imagen-seccion">
+            <p class="inicio-texto">Tu espacio confiable para cuidar de tu salud desde casa.</p>
+        </section>
+
+        <section id="consultas" class="seccion slide-in-right">
+            <h2>Consultas Médicas</h2>
+            <img src="consulta.jpg" alt="Consulta Médica" class="imagen-seccion">
+            <p>Describe tus síntomas y recibe una orientación:</p>
+            <input type="text" id="sintomaInput" placeholder="Ejemplo: dolor de estómago, fiebre..." />
+            <button onclick="recomendarConsulta()">Consultar</button>
+            <div id="respuestaConsulta" class="respuesta"></div>
+        </section>
+
+        <section id="consejos" class="seccion slide-in-left">
+            <h2>Consejos de Salud</h2>
+            <img src="consejos.jpg" alt="Consejos de Salud" class="imagen-seccion">
+            <p>Escribe un malestar para obtener un consejo rápido:</p>
+            <input type="text" id="consejoInput" placeholder="Ejemplo: tos, estrés..." />
+            <button onclick="darConsejo()">Obtener Consejo</button>
+            <div id="respuestaConsejo" class="respuesta"></div>
+        </section>
+
+        <section id="contacto" class="seccion slide-in-bottom">
+            <h2>Contacto</h2>
+            <i class="fas fa-envelope fa-5x"></i>
+            <p>¿Tienes dudas? Escríbenos a <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contacto@doctordigital.com" target="_blank">contacto@doctordigital.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 El Doctor Digital. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
